@@ -6,9 +6,45 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .move{
+            background-color : blue;
+            position : absolute;
+            left: 700px;
+            width : 100px;
+            height : 100px;
+            transition : all 2s ease-in-out;
+            transform : scale(1.1);
+        }
+
+        .calc{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        #pad{
+            background-color: #dbdada;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
+<div id="pad"></div>
+<div class="calc">
+    <button id="1">1</button>
+    <button id="2">2</button>
+    <button id="3">3</button>
+    <button id="4">4</button>
+    <button id="5">5</button>
+    <button id="6">6</button>
+    <button id="7">7</button>
+    <button id="8">8</button>
+    <button id="9">9</button>
+    <button></button>
+    <button id="0">0</button>
+    <button id="enter">=</button>
+</div>
 <!--<div id="ga" class="container gaClass">-->
 <!--    learning FEWD-->
 <!--</div>-->
@@ -20,12 +56,11 @@
 <!--<div id="ga3" class="gaClass2">-->
 <!--    learning FEWD3333-->
 <!--</div>-->
-<div id="red_box" style="background-color: red; height: 200px; width: 200px;">
+<!--<div id="red_box" style="background-color: red; height: 50px; width: 50px;">-->
 
-</div>
+<!--</div>-->
 
-<button id="btn">Click Me</button>
-
+<!--<button id="btn">Click Me</button>-->
 <script src="js/main.js"></script>
 </body>
 </html>
