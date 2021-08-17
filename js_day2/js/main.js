@@ -46,31 +46,31 @@ btn.addEventListener("click", function(){
 
 */
 
-let inputField = document.querySelector("#text_input")
-
-
-document.querySelector("#text_input").addEventListener("keyup", function (e){
-    // console.log(document.querySelector("#text_input"))
-    // console.log("e without target:", e)
-    console.log("e with target:", e.target)
-    // console.log(e.target.value)
-    if(e.target.value.length > 3) {
-        document.querySelector("#pad")
-            .innerText = "is typing a text..."
-    }
-})
-
-document.querySelector("#send").addEventListener("click", function(e){
-    console.log("in button",e.target)
-    // inputField ==> document.querySelector("#text_input")
-    console.log(document.querySelector("#text_input").value)
-    console.log(inputField.value)
-    document.querySelector("#pad")
-        .innerText = inputField.value
-
-    inputField.value = ""
-
-})
+// let inputField = document.querySelector("#text_input")
+//
+//
+// document.querySelector("#text_input").addEventListener("keyup", function (e){
+//     // console.log(document.querySelector("#text_input"))
+//     // console.log("e without target:", e)
+//     console.log("e with target:", e.target)
+//     // console.log(e.target.value)
+//     if(e.target.value.length > 3) {
+//         document.querySelector("#pad")
+//             .innerText = "is typing a text..."
+//     }
+// })
+//
+// document.querySelector("#send").addEventListener("click", function(e){
+//     console.log("in button",e.target)
+//     // inputField ==> document.querySelector("#text_input")
+//     console.log(document.querySelector("#text_input").value)
+//     console.log(inputField.value)
+//     document.querySelector("#pad")
+//         .innerText = inputField.value
+//
+//     inputField.value = ""
+//
+// })
 
 /**
 document.querySelector("#text_input").value to get value of input fields
@@ -84,3 +84,37 @@ document.querySelector("#text_input").value to get value of input fields
 // [     ] [] [     ]
 // [+] [-] [*] [/]
 // [   caculate  ]
+
+
+document.querySelector("#minus").addEventListener("click", function(){
+    document.querySelector("#sign").value = "-"
+})
+
+document.querySelector("#plus").addEventListener("click", function(){
+    document.querySelector("#sign").value = "+"
+})
+
+document.querySelector("#mult").addEventListener("click", function(){
+    document.querySelector("#sign").value = "*"
+})
+
+document.querySelector("#div").addEventListener("click", function(){
+    document.querySelector("#sign").value = "."
+})
+
+
+document.querySelector("#calc").addEventListener("click", function(){
+    let sign = document.querySelector("#sign").value
+    let num1 = document.querySelector("#num1").value
+    let num2 = document.querySelector("#num2").value
+    let result = document.querySelector("#output")
+    if(sign == "+"){
+        result.innerText = parseInt(num1) + parseInt(num2)
+    }else if(sign == "-"){
+        result.innerText = parseInt(num1) - parseInt(num2)
+    }else if(sign == "*"){
+        result.innerText = parseInt(num1) + parseInt(num2)
+    }else if(sign == "/"){
+        result.innerText = parseInt(num1) + parseInt(num2)
+    }
+})

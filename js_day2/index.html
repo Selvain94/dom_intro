@@ -26,13 +26,16 @@
             height: 30px;
             margin-bottom: 10px;
         }
+        .flex{
+            display: flex;
+        }
     </style>
 </head>
 <body>
 
-<div id="pad"></div>
-<input  id="text_input"/>
-<button id="send">Send</button>
+<!--<div id="pad"></div>-->
+<!--<input  id="text_input"/>-->
+<!--<button id="send">Send</button>-->
 
 <!--<div id="ga" class="container gaClass">-->
 <!--    learning FEWD-->
@@ -50,6 +53,19 @@
 <!--</div>-->
 
 <!--<button id="btn">Click Me</button>-->
+<div id="output"></div>
+<div class="flex">
+    <input id="num1" />
+    <input id="sign" disabled/>
+    <input id="num2"/>
+</div>
+<div class="flex">
+    <button id="plus"> + </button>
+    <button id="minus"> - </button>
+    <button id="mult"> * </button>
+    <button id="div"> / </button>
+</div>
+<button id="calc">Calculate</button>
 <script src="js/main.js"></script>
 </body>
 </html>
