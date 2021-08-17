@@ -47,9 +47,11 @@ btn.addEventListener("click", function(){
 */
 
 let inputField = document.querySelector("#text_input")
-inputField.addEventListener("keyup", function (e){
+
+
+document.querySelector("#text_input").addEventListener("keyup", function (e){
     // console.log(document.querySelector("#text_input"))
-    console.log("e without target:", e)
+    // console.log("e without target:", e)
     console.log("e with target:", e.target)
     // console.log(e.target.value)
     if(e.target.value.length > 3) {
@@ -58,3 +60,23 @@ inputField.addEventListener("keyup", function (e){
     }
 })
 
+document.querySelector("#send").addEventListener("click", function(e){
+    console.log("in button",e.target)
+    // inputField ==> document.querySelector("#text_input")
+    console.log(document.querySelector("#text_input").value)
+    console.log(inputField.value)
+    document.querySelector("#pad")
+        .innerText = inputField.value
+
+    inputField.value = ""
+
+})
+
+/**
+document.querySelector("#text_input").value to get value of input fields
+//<button id="sign-1"> + </button>
+ <button id="sign-2"> x </button>
+ <button id="sign-3"> * </button>
+ <button id="sign-4"> - </button>
+ *
+//  */
