@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<!-- html goes here-->
+<script>
+// // alert("Hello Ebere, its sun");
+// console.log("Hello Ebere");
+//
+// let name = "Ebere" //string
+// let Name = "Ebere"
+// console.log("before: ",name)
+// const CLASSNAME = "FEWD"
+//
+// name = "Izzue"
+// console.log("after : ",name)
+// // DONT DO THIS
+// // CLASSNAME = "SEI"
+// // console.log("after : ",CLASSNAME)
+//
+// let num = 10
+// let num2 = parseInt("10") //10.1
+//
+// console.log(num + num2)
+//
+// let word = "My name is "
+//
+// console.log(word + name)
+//
+// let bool = false //true
+//
+// let arrOfNums = [1,2,3,4,5]
+// let arrOfStr = ['e','b', 'e', 'r', 'e']
+// //               0   1    2    3    4
+// console.log(arrOfStr[5])
+//
+// let obj = {
+//     // key : value
+//     firstName: "Ebere",
+//     lastName :"Iweala",
+//     location: "Seattle",
+//     hobbies: ['traveling', 'hiking'],
+//     typingSpeed: 100,
+//     likes: true
+// }
+// console.log(obj.firstName)
+// // let x = null
+// //null & undefined
+//
+// //carpark app that allows only 50cars
+// //PSEUDO CODE
+// /**
+//  * LIMIT = 50
+//  * IF LIMIT NOT EQUAL TO 50
+//  *  OPEN THE BARRIER AND LET CAR IN
+//  *  THEN LIMIT - 1
+//  * ELSE CAR PARK IS FULL
+//  *
+//  *
+//  */
+//
+// /**
+//  * MAKING TEA
+//  * - BOIL WATER
+//  * - GET A CUP
+//  * - PUT IN THE TEA BAG
+//  * - PUT SOME HOT WATER
+//  * - ADD SOME SUGAR
+//  * - ADD SOME MILK
+//  * - STIR TEA
+//  * - REMOVE TEA BAG
+//  */
+//
+// let legalDrivingAge = 16
+// let myAge = 15
+// let yourAge = 17
+// //|| or
+// // && and
+// if(legalDrivingAge > myAge || legalDrivingAge > yourAge){
+//     console.log("You are not allowed to drive yet!")
+// }else{
+//     console.log("allowed to drive")
+// }
+//
+// let username = "ebere"
+// let userInput = prompt("What is your username?")
+//
+// if(username == userInput){
+//     alert("Welcome back " + userInput)
+// }else{
+//     alert("Ahh!!! hacker!!!")
+// }
+//
+// /*
+//  Write a program that pops up a prompt, enter a number and add 20 to it. Then alert the output
+//
+//  parseInt(12) + 20 = 32
+//  12 + 20 = 1220
+//  */
+// let userNumInput = prompt("Enter a number?")
+// alert(parseInt(userNumInput) + 20)
+//
+// let radius = prompt("enter radius here: ")
+// //circ = 2 * PI * radius
+// let circ = 2 * Math.PI * radius
+// alert(circ)
+// //area = PI * radius^2
+// let area = Math.PI * radius * radius
+// alert(area)
+
+// let lang = prompt("enter language here: ") //arabic, french, english
+//
+// if(lang == 'arabic'){
+//     alert("مرحبا بالعالم")
+// }else if(lang == 'french'){
+//     alert("Bonjour")
+// }else{
+//     alert("Hello")
+// }
+
+// console.log("== ", 1 == "1")
+// console.log("=== ", 1 === "1")
+
+//functions
+// f(x) : x + 2
+// f(2) : 4
+
+// let sumOfNums = 1 + 2
+//3
+// function greeting(){
+//     return "Hello People"
+// }
+// console.log(greeting())
+// function greetingHim(name){
+//     return "Hello " + name
+// }
+// console.log(greetingHim("Ebere"))
+// function greetWithFullName(first, last){
+//         console.log("Hello " + first + " " + last)
+// }
+// greetWithFullName("Ebere", "Iweala")
+//
+// function num(){
+//     //recursion
+//     return greetWithFullName("Sam", "James")//{ name: "Ebere" }//[1,2,3,4,5]
+// }
+// console.log(num())
+
+
+// //convertTemp(10, "C")
+// function convertTemp(num, measurement){
+//     if(measurement == "C") {
+//         console.log((num * 9 / 5) + 32)
+//     }else{
+//         console.log((num - 32) * 5/9)
+//     }
+// }
+//
+// let radius = prompt("enter radius here: ")
+//
+// function circleCalc(radius, measurement){
+//     // let r = prompt("enter radius here: ")
+//     if(measurement == "area"){
+//         return Math.PI * radius * radius
+//     }else{
+//         return 2 * Math.PI * radius
+//     }
+// }
+// console.log(circleCalc(radius, "area"))
+// console.log(circleCalc(radius, "circ"))
+//
+// convertTemp(68, "F")
+// convertTemp(32, "C")
+//
+// function addTwoNumbers(num1, num2){
+//     if(typeof num1 == "string" || typeof num2 == "string" ){
+//         return NaN
+//     }
+//      return num1 + num2
+// }
+// console.log(addTwoNumbers(1,2))
+// console.log(addTwoNumbers("Hello",2))
+//
+// // let x = 0
+// // function changeValue(){
+// //     let x = 10
+// // }
+// //
+// // console.log(x)
+// //
+// // changeValue()
+// // console.log(x)
+
+
+// function scoreNickname(score) {
+//     let par = 5
+//     if(score >= par + 3) {
+//         console.log("Not sure")
+//     } else if(score == par + 2) {
+//         console.log("Double Bogey")
+//     } else if(score == par + 1) {
+//         console.log("Bogey")
+//     } else if(score == par) {
+//         console.log("Par")
+//     } else if(score == par - 1) {
+//         console.log("Birdie")
+//     } else if(score <= par - 2) {
+//         console.log("Eagle")
+//     } else if(score == 1) {
+//         console.log("Hole in one")
+//     }
+// }
+// scoreNickname(1)
+</script>
+</body>
+</html>
