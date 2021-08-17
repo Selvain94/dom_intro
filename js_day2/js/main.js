@@ -80,3 +80,7 @@ document.querySelector("#text_input").value to get value of input fields
  <button id="sign-4"> - </button>
  *
 //  */
+
+// [     ] [] [     ]
+// [+] [-] [*] [/]
+// [   caculate  ]
