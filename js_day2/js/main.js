@@ -29,6 +29,9 @@ btn.addEventListener("click", function(){
     box.style.backgroundColor = "blue"
     box.style.width = "100px";
     box.style.height = "100px";
+    box.style.transition = "all 2s ease-in-out";
+    box.style.transform = "scale(1.1)";
+
 })
 
 
