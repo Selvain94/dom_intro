@@ -20,6 +20,7 @@
 // // let selector2 = document.querySelectorAll(".gaClass2")
 // // console.log(selector2[1])
 //
+/**
 let btn = document.querySelector("#btn")
 
 btn.addEventListener("click", function(){
@@ -42,4 +43,18 @@ btn.addEventListener("click", function(){
 // //         funct()
 // //     }
 // // }
+
+*/
+
+let inputField = document.querySelector("#text_input")
+inputField.addEventListener("keyup", function (e){
+    // console.log(document.querySelector("#text_input"))
+    console.log("e without target:", e)
+    console.log("e with target:", e.target)
+    // console.log(e.target.value)
+    if(e.target.value.length > 3) {
+        document.querySelector("#pad")
+            .innerText = "is typing a text..."
+    }
+})
 
